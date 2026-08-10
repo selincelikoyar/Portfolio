@@ -160,6 +160,7 @@
   h2.sec-title { font-size: clamp(1.6rem, 3.2vw, 2.2rem); margin-bottom: 1.4rem; }
 
   .accent { color: var(--amber-deep); font-family: var(--font-serif); font-style: italic; }
+  .nowrap { white-space: nowrap; }
 
   /* ---- Hero ---- */
   .hero {
@@ -169,7 +170,7 @@
   }
   .hero-content { position: relative; z-index: 2; }
   .hero h1 {
-    font-size: clamp(2.6rem, 5.5vw, 4.2rem); line-height: 1.12;
+    font-size: clamp(2.1rem, 4.5vw, 3.5rem); line-height: 1.14;
     letter-spacing: -0.01em;
   }
   .hero h1 .accent { font-size: inherit; }
@@ -482,8 +483,8 @@
   <header class="hero" id="overview">
     <div class="hero-content">
       <div class="section-idx"><span>01 —</span></div>
-      <h1>I build AI-powered<br>products that advance<br><span class="accent">clinical research.</span></h1>
-      <p class="hero-sub">Eight years in clinical research, three years building AI-powered healthcare products. I work best in ambiguity — connecting customer needs, data, and diverse perspectives to find the right problem before building the solution.</p>
+      <h1>I build <span class="nowrap">user-centered</span> health products that put people <span class="accent">in control of their data.</span></h1>
+      <p class="hero-sub">With eight years in clinical research and three years building AI-powered healthcare products, I turn complex health data into insights people can actually understand and act on. My goal is simple: democratize access to health insights so everyone has the tools to better understand themselves and become their best selves.</p>
       <a class="hero-cta" href="#case-studies">VIEW MY WORK <span class="arrow">→</span></a>
     </div>
     <div class="hero-visual">
