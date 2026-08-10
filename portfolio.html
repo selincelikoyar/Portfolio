@@ -300,6 +300,7 @@
 
   /* ---- Timeline ---- */
   .intro-text { margin-bottom: 2rem; max-width: 56ch; color: var(--ink-mid); font-size: 1rem; }
+  .intro-lead { font-family: var(--font-serif); font-size: clamp(1.3rem, 2.4vw, 1.7rem); line-height: 1.4; color: var(--ink); max-width: 44ch; margin-bottom: 1.2rem; text-wrap: balance; }
   .timeline { position: relative; padding-left: 2rem; }
   .timeline::before {
     content: ''; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px;
@@ -596,7 +597,9 @@
   <section id="how-i-work" class="reveal">
     <div class="section-idx"><span>03 —</span><span class="line"></span><span class="label">Operating Principles</span></div>
     <h2 class="sec-title">How I Work</h2>
-    <p class="intro-text">I like working at the intersection of evidence, experimentation, and team context. When the information needed to make a product decision does not exist, I am comfortable finding another way to uncover it — or building a lightweight system that makes it visible.</p>
+    <p class="intro-lead">I like understanding the whole picture, then zooming in.</p>
+    <p class="intro-text" style="margin-bottom:0.9rem">I want to understand the product, the people using it, the problem we're solving, the landscape around it, and how all the pieces fit together. Then I want to get into the details. Where is the friction? What is confusing? What are we assuming? What small thing could make the experience meaningfully better?</p>
+    <p class="intro-text">My background in clinical research taught me how to work through complex evidence and ambiguity. My work as an artist taught me to observe closely, think visually, and care about the details. Product brings those instincts together. I care about the big picture, but I also care about the small things that make the big picture work.</p>
 
     <div class="principles-grid">
       <div class="principle-card">
@@ -606,8 +609,9 @@
           <circle cx="16" cy="17" r="2" fill="var(--amber)" opacity="0.3"/>
         </svg>
         <h3>Create the Visibility the Team Needs</h3>
-        <p>I love data, but I do not wait for perfect instrumentation before making progress. When the visibility I need does not exist, I look for another source of evidence or build a lightweight way to capture it.</p>
-        <p>I have used tools such as Claude Code to create lightweight internal dashboards and product workflows when the visibility I needed did not already exist — alongside reusable workflows for competitive market analysis and systems for consolidating customer feedback into recurring themes. The goal is not to add more tooling. It is to help the team identify patterns, make better-informed decisions, and spend less time assembling information manually.</p>
+        <p>I love data, but I don't wait for perfect instrumentation before making progress. When the information I need doesn't exist, I look for another source of evidence or build a lightweight way to make it visible.</p>
+        <p>I've used tools like Claude Code to build internal dashboards and product workflows when the visibility we needed didn't exist. I've built reusable workflows for competitive research and ways to turn scattered customer feedback into recurring themes.</p>
+        <p>The point isn't to build more tools. It's to help the team see what is actually happening, recognize patterns, and make better decisions without spending hours pulling information together.</p>
       </div>
       <div class="principle-card">
         <svg class="principle-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -621,8 +625,9 @@
           <line x1="18" y1="22" x2="22" y2="18" stroke="var(--blue)" stroke-width="0.5" stroke-dasharray="2 2"/>
         </svg>
         <h3>Give People Context, Not Just Process</h3>
-        <p>I do not believe there is one universally correct way for a product team to work. My role is to understand how designers, engineers, researchers, and other partners work best, then create the conditions that allow them to make strong decisions with appropriate autonomy.</p>
-        <p>That means providing clear customer problems, strategic context, decision boundaries, and access to relevant evidence rather than attempting to control every step of the process.</p>
+        <p>I don't think there is one right way for a product team to work.</p>
+        <p>I care more about giving people enough context to make good decisions than telling them exactly how to get there. That means making sure the team understands the customer problem, why it matters, what we've learned, and what constraints we're working within.</p>
+        <p>From there, I want designers, engineers, researchers, and other partners to have the autonomy to bring their own expertise to the problem.</p>
       </div>
       <div class="principle-card">
         <svg class="principle-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -631,14 +636,12 @@
           <circle cx="16" cy="16" r="4" stroke="var(--amber)" stroke-width="0.8"/>
           <circle cx="28" cy="12" r="1.5" fill="var(--blue)" opacity="0.3" transform="rotate(-20 16 16)"/>
         </svg>
-        <h3>Use AI to Strengthen Judgment — Not Replace It</h3>
-        <p>When we considered how our design process should evolve in an AI-assisted development environment, I did not begin by asking which additional AI tools we should introduce. I focused first on what designers needed to do their best work.</p>
-        <p>We found that better context was more valuable than simply adding better tools. We began involving design earlier by sharing customer pain points, workflows, personas, research, and competitive context; putting rough concepts in front of customers sooner; and continuously circulating feedback so the entire team developed a stronger understanding of the people we were building for. <a href="#case-medeloop-pm">See how this approach shaped the Medeloop Analytics redesign.</a></p>
+        <h3>Use AI to Expand How We Think</h3>
+        <p>I use AI to shorten the distance between a question and something we can actually explore.</p>
+        <p>I've used Claude Code to build lightweight dashboards and product workflows when the visibility we needed didn't exist, create reusable systems for competitive research, and turn scattered customer feedback into recurring themes.</p>
+        <p>I also use it as a thinking and prototyping partner. A rough idea can become something tangible quickly enough to pressure-test the workflow, uncover new questions, and put something in front of users or the team.</p>
+        <p>The goal isn't to use AI everywhere. It's to find the places where it can remove repetitive work, help us explore more possibilities, and give the team more room to focus on the decisions that require judgment and craft.</p>
       </div>
-    </div>
-
-    <div class="principle-quote">
-      <p>I use data creatively to improve decisions, but I also pay close attention to the environment in which those decisions are made. Creating better visibility while helping people do their best work is how I like to operate.</p>
     </div>
   </section>
 
