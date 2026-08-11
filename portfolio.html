@@ -277,9 +277,9 @@ h2.sec-title { font-size:clamp(1.6rem,4.2vw,3.1rem); line-height:1.0; letter-spa
   .project-panel { grid-template-columns:1fr; gap:0.8rem; }
   .project-panel > :not(.project-num):not(.project-decoration) { grid-column:1; }
   .project-num { grid-column:1; }
-  .sci-decoration { display:none; }
-  .doodle.hide-sm { display:none; }
-  .project-decoration { display:none; }
+}
+@media (max-width:600px) {
+  .sci-decoration, .doodle.hide-sm, .project-decoration { display:none; }
 }
 @media (max-width:640px) {
   .topnav { gap:1rem; overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch; }
