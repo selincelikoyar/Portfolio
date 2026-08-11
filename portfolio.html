@@ -63,7 +63,7 @@ img { max-width:100%; display:block; }
 .accent {
   font-family:var(--font); font-style:normal; color:var(--ink);
   background:var(--yellow); box-decoration-break:clone; -webkit-box-decoration-break:clone;
-  padding:0.04em 0.18em; margin:0 -0.04em; border-radius:1px;
+  padding:0.02em 0.16em; margin:0 -0.04em; border-radius:1px;
 }
 .nowrap { white-space:nowrap; }
 
@@ -97,14 +97,14 @@ footer.footer { padding-top:clamp(4rem,9vw,8.5rem); scroll-margin-top:5rem; posi
 .section-idx .line { flex:1 1 auto; height:1px; background:var(--ink); max-width:none; width:auto; }
 .section-idx .label { font:500 0.7rem/1 var(--mono); letter-spacing:0.2em; text-transform:uppercase; color:var(--ink); white-space:nowrap; }
 
-h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spacing:-0.035em; margin-bottom:2rem; max-width:16ch; }
+h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-spacing:-0.035em; margin-bottom:2rem; max-width:16ch; }
 
 /* ============================ HERO ============================ */
 .hero { padding:clamp(3rem,7vw,6rem) 0 0; display:grid; grid-template-columns:1.35fr 0.9fr; gap:clamp(2rem,5vw,5rem); align-items:end; min-height:auto; position:relative; }
 .hero-content { position:relative; z-index:2; }
 .hero .section-idx { margin-bottom:2.2rem; }
 .hero .section-idx > span:first-child { font-size:0.72rem; }
-.hero h1 { font-size:clamp(2.6rem,7.2vw,5.6rem); line-height:0.94; letter-spacing:-0.04em; font-weight:500; }
+.hero h1 { font-size:clamp(1.9rem,4.8vw,3.75rem); line-height:1.08; letter-spacing:-0.04em; font-weight:500; }
 .hero h1 .accent { font-size:inherit; line-height:1; padding:0.02em 0.14em; }
 .hero-sub { margin-top:2rem; font-size:clamp(1rem,1.25vw,1.18rem); color:var(--ink-mid); max-width:46ch; line-height:1.6; }
 .hero-cta { margin-top:2.4rem; display:inline-flex; align-items:center; gap:0.6rem; font:500 0.72rem/1 var(--mono); letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:0.4rem; transition:gap 0.3s ease; }
@@ -121,7 +121,7 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
 .hero-mockup { display:none; }
 
 /* ============================ INTRO TEXT ============================ */
-.intro-lead { font-family:var(--font); font-weight:500; font-size:clamp(1.4rem,2.8vw,2.1rem); line-height:1.16; letter-spacing:-0.025em; color:var(--ink); max-width:22ch; margin-bottom:1.6rem; text-wrap:balance; }
+.intro-lead { font-family:var(--font); font-weight:500; font-size:clamp(1.15rem,2.1vw,1.55rem); line-height:1.16; letter-spacing:-0.025em; color:var(--ink); max-width:22ch; margin-bottom:1.6rem; text-wrap:balance; }
 .intro-text { margin-bottom:1.4rem; max-width:60ch; color:var(--ink-mid); font-size:1.02rem; line-height:1.65; }
 
 /* ============================ SELECTED WORK ============================ */
@@ -130,10 +130,10 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
 .project-panel::before { content:''; }
 .project-panel:hover { box-shadow:none; }
 .project-panel.bg-cream, .project-panel.bg-blue, .project-panel.bg-stone { background:none; }
-.project-num { grid-column:1; font:500 clamp(2.2rem,4vw,3.4rem)/0.9 var(--font); letter-spacing:-0.04em; color:var(--ink); margin:0; }
+.project-num { grid-column:1; font:500 clamp(1.6rem,3vw,2.4rem)/0.9 var(--font); letter-spacing:-0.04em; color:var(--ink); margin:0; }
 .project-panel > :not(.project-num):not(.project-decoration) { grid-column:2; }
 .project-role { font:500 0.66rem/1 var(--mono); letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); display:inline-block; margin-bottom:0.9rem; padding:0.28rem 0.5rem; background:var(--yellow); }
-.project-panel h3 { font-size:clamp(1.6rem,3.4vw,2.6rem); line-height:1.02; letter-spacing:-0.03em; margin-bottom:0.7rem; }
+.project-panel h3 { font-size:clamp(1.3rem,2.6vw,1.9rem); line-height:1.02; letter-spacing:-0.03em; margin-bottom:0.7rem; }
 .project-meta { font:500 0.72rem/1.4 var(--mono); letter-spacing:0.02em; color:var(--ink-faint); text-transform:uppercase; margin-top:0.2rem; }
 .project-desc { margin-top:1.1rem; color:var(--ink-mid); font-size:1.05rem; max-width:56ch; line-height:1.6; }
 .bullets { margin-top:1.4rem; display:flex; flex-direction:column; gap:0.7rem; max-width:60ch; }
@@ -199,7 +199,7 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
 .ed-card .sub { color:var(--ink-soft); font:400 0.8rem/1.4 var(--mono); margin-top:0.35rem; }
 
 /* ============================ ABOUT ============================ */
-.about-statement { font-family:var(--font); font-weight:500; font-size:clamp(1.7rem,4.2vw,3.1rem); line-height:1.08; letter-spacing:-0.035em; max-width:20ch; margin-bottom:clamp(2.5rem,5vw,4rem); color:var(--ink); }
+.about-statement { font-family:var(--font); font-weight:500; font-size:clamp(1.3rem,2.9vw,2.1rem); line-height:1.32; letter-spacing:-0.035em; max-width:20ch; margin-bottom:clamp(2.5rem,5vw,4rem); color:var(--ink); }
 .philosophy-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.8rem,4vw,3.2rem); }
 .phil-card { position:relative; border-top:1px solid var(--ink); padding-top:1.5rem; }
 .phil-icon { width:30px; height:30px; margin-bottom:1rem; }
@@ -208,7 +208,7 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
 
 /* ============================ FOOTER ============================ */
 .footer-grid { display:grid; grid-template-columns:1.2fr 0.8fr; gap:clamp(2rem,5vw,5rem); align-items:start; border-top:1px solid var(--ink); padding-top:2.4rem; }
-.footer-tag { font-family:var(--font); font-weight:500; font-size:clamp(1.3rem,2.6vw,2rem); line-height:1.2; letter-spacing:-0.025em; max-width:22ch; }
+.footer-tag { font-family:var(--font); font-weight:500; font-size:clamp(1.1rem,2vw,1.5rem); line-height:1.2; letter-spacing:-0.025em; max-width:22ch; }
 .footer-actions { margin-top:1.8rem; display:flex; flex-wrap:wrap; gap:0.7rem; }
 .btn { display:inline-flex; align-items:center; gap:0.4rem; font:500 0.72rem/1 var(--mono); letter-spacing:0.12em; text-transform:uppercase; padding:0.8rem 1.3rem; border-radius:0; border:1px solid var(--ink); transition:transform 0.2s ease, background 0.2s ease, color 0.2s ease; }
 .btn:hover { transform:translateY(-2px); }
@@ -441,8 +441,8 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
     <div class="section-idx"><span>03 —</span><span class="line"></span><span class="label">Operating Principles</span></div>
     <h2 class="sec-title">How I Work</h2>
     <p class="intro-lead">I like understanding the whole picture, then zooming in.</p>
-    <p class="intro-text" style="margin-bottom:0.9rem">I want to understand the product, the people using it, the problem we're solving, the landscape around it, and how all the pieces fit together. Then I want to get into the details. Where is the friction? What is confusing? What are we assuming? What small thing could make the experience meaningfully better?</p>
-    <p class="intro-text">My background in clinical research taught me how to work through complex evidence and ambiguity. My work as an artist taught me to observe closely, think visually, and care about the details. Product brings those instincts together. I care about the big picture, but I also care about the small things that make the big picture work.</p>
+    <p class="intro-text" style="margin-bottom:0.9rem">I want to understand the product, the people using it, the problem we're solving, and how all the pieces fit together. Then I want to get into the details. Where is the friction? What is confusing? What are we assuming? What small thing could make the experience meaningfully better?</p>
+    <p class="intro-text">My background in clinical research taught me how to work through complex evidence and ambiguity. My work as an artist taught me to observe closely, think visually, and care about the details. Product brings those instincts together. I care about the big picture, but I also care about the small things that make it work.</p>
 
     <div class="principles-grid">
       <div class="principle-card">
@@ -453,7 +453,7 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
         </svg>
         <h3>Create the Visibility the Team Needs</h3>
         <p>I love data, but I don't wait for perfect instrumentation before making progress. When the information I need doesn't exist, I look for another source of evidence or build a lightweight way to make it visible.</p>
-        <p>I've used tools like Claude Code to build internal dashboards and product workflows when the visibility we needed didn't exist. I've built reusable workflows for competitive research and ways to turn scattered customer feedback into recurring themes.</p>
+        <p>I've used tools like Claude Code to build internal dashboards and product workflows, created reusable systems for competitive research, and found ways to turn scattered customer feedback into recurring themes.</p>
         <p>The point isn't to build more tools. It's to help the team see what is actually happening, recognize patterns, and make better decisions without spending hours pulling information together.</p>
       </div>
       <div class="principle-card">
@@ -481,8 +481,7 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
         </svg>
         <h3>Use AI to Expand How We Think</h3>
         <p>I use AI to shorten the distance between a question and something we can actually explore.</p>
-        <p>I've used Claude Code to build lightweight dashboards and product workflows when the visibility we needed didn't exist, create reusable systems for competitive research, and turn scattered customer feedback into recurring themes.</p>
-        <p>I also use it as a thinking and prototyping partner. A rough idea can become something tangible quickly enough to pressure-test the workflow, uncover new questions, and put something in front of users or the team.</p>
+        <p>It's a thinking and prototyping partner. A rough idea can become something tangible quickly enough to pressure-test a workflow, uncover new questions, and put something in front of users or the team.</p>
         <p>The goal isn't to use AI everywhere. It's to find the places where it can remove repetitive work, help us explore more possibilities, and give the team more room to focus on the decisions that require judgment and craft.</p>
       </div>
     </div>
@@ -638,7 +637,7 @@ h2.sec-title { font-size:clamp(2.3rem,6.5vw,5rem); line-height:0.98; letter-spac
     <span class="sci-decoration sci-brain draw" aria-hidden="true"><svg width="132" height="112" viewBox="0 0 132 112" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 64 C14 44 30 26 48 32 C52 18 80 18 86 32 C106 28 120 46 108 63 C118 78 102 96 84 89 C77 101 53 101 47 89 C28 95 13 79 24 64 Z" stroke="var(--amber)" stroke-width="1.4" stroke-opacity="0.5"/><path d="M66 26 C60 46 72 58 65 74 C61 82 66 86 66 90" stroke="var(--amber)" stroke-width="1" stroke-opacity="0.35"/><path d="M36 52 C44 50 46 60 40 66" stroke="var(--blue)" stroke-width="1" stroke-opacity="0.4"/><path d="M92 48 C84 50 84 60 92 62" stroke="var(--blue)" stroke-width="1" stroke-opacity="0.4"/><path d="M50 78 C56 74 60 80 56 84" stroke="var(--amber)" stroke-width="1" stroke-opacity="0.35"/><line x1="44" y1="46" x2="66" y2="40" stroke="var(--blue)" stroke-width="0.7" stroke-dasharray="2 3" stroke-opacity="0.5"/><line x1="66" y1="40" x2="90" y2="52" stroke="var(--blue)" stroke-width="0.7" stroke-dasharray="2 3" stroke-opacity="0.5"/><line x1="52" y1="70" x2="80" y2="72" stroke="var(--blue)" stroke-width="0.7" stroke-dasharray="2 3" stroke-opacity="0.5"/><line x1="44" y1="46" x2="52" y2="70" stroke="var(--blue)" stroke-width="0.7" stroke-dasharray="2 3" stroke-opacity="0.5"/><line x1="90" y1="52" x2="80" y2="72" stroke="var(--blue)" stroke-width="0.7" stroke-dasharray="2 3" stroke-opacity="0.5"/><circle cx="44" cy="46" r="2.4" fill="var(--amber)" fill-opacity="0.6"/><circle cx="66" cy="40" r="2.4" fill="var(--blue)" fill-opacity="0.55"/><circle cx="90" cy="52" r="2.4" fill="var(--amber)" fill-opacity="0.6"/><circle cx="52" cy="70" r="2.4" fill="var(--blue)" fill-opacity="0.55"/><circle cx="80" cy="72" r="2.4" fill="var(--amber)" fill-opacity="0.6"/></svg></span>
     <div class="section-idx"><span>07 —</span><span class="line"></span><span class="label">About</span></div>
     <h2 class="sec-title">How I Think About Product</h2>
-    <p class="about-statement">I build products that make complex things easier to understand, act on, and ultimately <span class="accent">put back in the hands of the people using them.</span></p>
+    <p class="about-statement">I build health products that make complex information easier to understand and act on, putting people back <span class="accent">in control of their health.</span></p>
     <div class="philosophy-grid">
       <div class="phil-card">
         <svg class="phil-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="14" r="5" stroke="var(--amber)" stroke-width="1"/><path d="M10 28 C10 22 26 22 26 28" stroke="var(--amber)" stroke-width="1" fill="none"/><circle cx="18" cy="14" r="2" fill="var(--amber)" opacity="0.2"/></svg>
