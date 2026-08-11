@@ -228,6 +228,7 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
 
 /* ============================ DOODLES ============================ */
 .doodle { position:absolute; pointer-events:none; z-index:1; color:var(--ink); }
+.doodle, .sci-decoration, .project-decoration { transition:transform 0.4s cubic-bezier(.2,.7,.2,1); }
 .doodle svg { display:block; overflow:visible; }
 .doodle svg, .sci-decoration svg { transform:scale(1.22); transform-origin:top right; }
 .project-decoration { transform:scale(1.22); transform-origin:top right; }
@@ -235,7 +236,8 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
 .doodle-label { display:block; margin-top:0.4rem; text-align:right; font:500 0.58rem/1 var(--mono); letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-faint); }
 .doodle--molecule { top:5.25rem; right:0; }
 .doodle--molecule svg { transform:scale(0.82); transform-origin:top right; }
-.doodle--cell { top:clamp(7.5rem,10vw,9rem); right:clamp(0.5rem,3vw,3rem); }
+.doodle--cell { top:5.4rem; right:0; }
+.doodle--cell svg { transform:scale(0.75); transform-origin:top right; }
 [data-fill-y] { fill:var(--yellow); }
 [data-fill-g] { fill:var(--blue-hl); }
 .sci-decoration { position:absolute; pointer-events:none; z-index:1; }
@@ -537,7 +539,7 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
         <div class="tl-card">
           <span class="tl-dates">2023</span>
           <h4>Clinical Scientist <em>· Abphina</em></h4>
-          <p class="desc">Evaluated safety, efficacy, and clinical performance across two endovascular stent programs. Synthesized 40+ peer-reviewed studies into Clinical Evaluation and Clinical Study Reports supporting FDA and EU MDR submissions.</p>
+          <p class="desc">Evaluated safety, efficacy, and clinical performance across two endovascular stent programs. Conducted structured literature reviews, assessed evidence quality and relevance, and synthesized findings from 40+ peer-reviewed studies into Clinical Evaluation and Clinical Study Reports supporting FDA and EU MDR submissions.</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -545,7 +547,7 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
         <div class="tl-card">
           <span class="tl-dates">2022–2023</span>
           <h4>Biotechnology Article Writer <em>· HITLAB</em></h4>
-          <p class="desc">Wrote about emerging biotech and digital health research, translating technical ideas into stories that a general audience could actually understand.</p>
+          <p class="desc">Researched emerging biotech and digital health topics across scientific literature, clinical research, and industry sources. Synthesized complex findings into clear, accessible narratives, translating technical evidence into stories that helped non-specialist audiences understand why the research mattered.</p>
           <div class="work-links">
             <a href="https://www.hitlab.org/scalable-biomarker-depression-anxiety-ellipsis-health/" target="_blank" rel="noopener">Read the article ↗</a>
           </div>
@@ -556,7 +558,7 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
         <div class="tl-card">
           <span class="tl-dates">2019–2024</span>
           <h4>Freelance Medical Illustrator <em>· Boyut &amp; New York Medical College</em></h4>
-          <p class="desc">Created medical illustrations and children's books about cerebral palsy, learning how thoughtful visual storytelling can turn complex or unfamiliar ideas into something people can understand, connect with, and act on.</p>
+          <p class="desc">Translated clinical and anatomical information into visual stories for medical education and children's books about cerebral palsy. Worked from scientific and clinical source material to identify the essential concepts, then used visual communication to make unfamiliar or complex information easier to understand and remember.</p>
           <div class="work-links">
             <a href="https://www.sciencedirect.com/book/edited-volume/9780128233184/regenerative-nephrology" target="_blank" rel="noopener">Regenerative Nephrology ↗</a>
             <a href="https://www.boyutstore.com/ciftlikte-dogum-gunu" target="_blank" rel="noopener">Çiftlikte Doğum Günü ↗</a>
@@ -568,7 +570,7 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
         <div class="tl-card">
           <span class="tl-dates">2016–2019</span>
           <h4>Clinical Research Associate <em>· Locomotor Learning Lab</em></h4>
-          <p class="desc">Supported clinical research studying movement and rehabilitation, working directly with patient data and clinical research teams.</p>
+          <p class="desc">Supported clinical research in movement and rehabilitation, working with patient data, study protocols, and multidisciplinary research teams. Helped collect, organize, and interpret clinical data while developing an early understanding of how rigorous research can translate into better decisions for patients.</p>
         </div>
       </div>
     </div>
@@ -662,7 +664,7 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
     <h2 class="sec-title">Let's Build Something Good</h2>
     <div class="footer-grid">
       <div>
-        <p class="footer-tag">Always glad to talk product, <span class="accent">clinical AI</span>, or the space between evidence and execution.</p>
+        <p class="footer-tag">Always glad to talk product, <span class="accent">healthtech</span>, or the space between evidence and execution.</p>
         <div class="footer-actions">
           <a class="btn btn-amber" href="mailto:selincelikoyar@gmail.com">Email me</a>
           <a class="btn btn-ghost" href="tel:+16317674604">Call</a>
@@ -737,23 +739,30 @@ h2.sec-title { font-size:clamp(1.7rem,4.4vw,3.35rem); line-height:1.0; letter-sp
     drawEls.forEach(function (el) { drawObs.observe(el); });
   }
 
-  // gentle cursor reaction in the hero
+  // gentle cursor reaction for every doodle
   if (!reduce) {
-    var hero = document.getElementById('overview');
-    var floats = document.querySelectorAll('.float');
-    if (hero && floats.length) {
-      hero.addEventListener('pointermove', function (ev) {
-        var r = hero.getBoundingClientRect();
-        var dx = (ev.clientX - (r.left + r.width / 2)) / r.width;
-        var dy = (ev.clientY - (r.top + r.height / 2)) / r.height;
-        Array.prototype.forEach.call(floats, function (f) {
-          var d = parseFloat(f.getAttribute('data-depth') || '12');
-          f.style.transform = 'translate(' + (dx * d).toFixed(1) + 'px,' + (dy * d).toFixed(1) + 'px)';
-        });
-      });
-      hero.addEventListener('pointerleave', function () {
-        Array.prototype.forEach.call(floats, function (f) { f.style.transform = ''; });
-      });
+    var movers = [];
+    document.querySelectorAll('.doodle--neuron,.doodle--molecule,.doodle--cell,.sci-dna,.sci-brain,.project-decoration').forEach(function (el) {
+      movers.push({ el: el, base: el.classList.contains('project-decoration') ? ' scale(1.22)' : '' });
+    });
+    if (movers.length) {
+      var mx = 0, my = 0, raf = null, R = 260;
+      var updateDoodles = function () {
+        raf = null;
+        for (var i = 0; i < movers.length; i++) {
+          var m = movers[i], r = m.el.getBoundingClientRect();
+          if (r.bottom < -120 || r.top > window.innerHeight + 120) continue;
+          var dx = mx - (r.left + r.width / 2), dy = my - (r.top + r.height / 2);
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < R && dist > 0.5) {
+            var f = (1 - dist / R) * 10;
+            m.el.style.transform = 'translate(' + (dx / dist * f).toFixed(1) + 'px,' + (dy / dist * f).toFixed(1) + 'px)' + m.base;
+          } else {
+            m.el.style.transform = m.base;
+          }
+        }
+      };
+      window.addEventListener('pointermove', function (e) { mx = e.clientX; my = e.clientY; if (!raf) raf = requestAnimationFrame(updateDoodles); });
     }
   }
 })();
